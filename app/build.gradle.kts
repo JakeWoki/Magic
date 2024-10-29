@@ -59,14 +59,14 @@ android {
     flavorDimensions.add("capabilities")
 
     productFlavors {
-        create("lightningPlus") {
+        create("magicPlus") {
             dimension = "capabilities"
             buildConfigField("boolean", "FULL_VERSION", "Boolean.parseBoolean(\"true\")")
             applicationId = "com.lin.magic"
             versionCode = 101
         }
 
-        create("lightningLite") {
+        create("magicLite") {
             dimension = "capabilities"
             buildConfigField("boolean", "FULL_VERSION", "Boolean.parseBoolean(\"false\")")
             applicationId = "com.lin.magic.browser"
