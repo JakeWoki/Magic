@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
-    <string name="app_name">Lightning</string>
+    <string name="app_name">Magic</string>
     <string name="action_new_tab">新しいタブ</string>
     <string name="action_share">共有</string>
     <string name="action_history">履歴</string>
@@ -219,7 +219,7 @@
     <string name="action_add_to_homescreen">ホーム画面に追加</string>
     <string name="message_added_to_homescreen">ホーム画面にショートカットを追加しました</string>
     <string name="action_delete_all_bookmarks">すべてのブックマークを削除する</string>
-    <string name="upsell_plus_version">広告をブロックするには Lightning Plus へアップグレードしてください</string>
+    <string name="upsell_plus_version">広告をブロックするには Magic Plus へアップグレードしてください</string>
     <string name="message_open_download_fail">このファイルは存在しません</string>
 
     <string name="faq">FAQ</string>

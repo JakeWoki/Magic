@@ -116,7 +116,7 @@
     <string name="block_ad_remote_refresh_frequency_description">对于远程 Hosts 文件</string>
     <string name="block_ad_refresh_now">立即更新 Hosts</string>
 
-    <string name="block_ads_upsell_source">升级到 Lightning Plus 以选择</string>
+    <string name="block_ads_upsell_source">升级到 Magic Plus 以选择</string>
 
     <string name="block_remote_frequency_daily">每天</string>
     <string name="block_remote_frequency_weekly">每周</string>
@@ -253,7 +253,7 @@
     <string name="message_added_to_homescreen">快捷方式已添加到桌面</string>
     <string name="shortcut_message_failed_to_add">抱歉，你的桌面应用不支持快捷方式</string>
     <string name="action_delete_all_bookmarks">删除所有书签</string>
-    <string name="upsell_plus_version">升级到 Lightning Plus 以屏蔽广告</string>
+    <string name="upsell_plus_version">升级到 Magic Plus 以屏蔽广告</string>
     <string name="message_open_download_fail">文件不存在</string>
 
     <string name="faq">FAQ</string>

@@ -29,7 +29,7 @@
         app:title="@string/faq">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="http://acrdevelopment.org/lightning/faq">
+            android:data="https://github.com/JakeWoki/Magic/issues">
             <extra
                 android:name="SOURCE"
                 android:value="SELF" />

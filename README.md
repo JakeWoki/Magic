@@ -1,4 +1,4 @@
-# Lightning Browser [![Build Status](https://travis-ci.org/anthonycr/Lightning-Browser.svg?branch=master)](https://travis-ci.org/anthonycr/Lightning-Browser)
+# Magic Browser [![Build Status](https://travis-ci.org/anthonycr/Magic-Browser.svg?branch=master)](https://travis-ci.org/anthonycr/Lightning-Browser)
 
 #### Speed, Simplicity, Security
 ![](launcher_icon_small.png)
@@ -60,7 +60,7 @@ alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/det
 ```
 Copyright 2014 Anthony Restaino
 
-Lightning Browser
+Magic Browser
 
    This Source Code Form is subject to the terms of the 
    Mozilla Public License, v. 2.0. If a copy of the MPL 

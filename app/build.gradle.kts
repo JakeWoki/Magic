@@ -19,11 +19,11 @@ android {
     }
 
     sourceSets {
-        create("lightningPlus").apply {
-            setRoot("src/LightningPlus")
+        create("magicPlus").apply {
+            setRoot("src/MagicPlus")
         }
-        create("lightningLite").apply {
-            setRoot("src/LightningLite")
+        create("magicLite").apply {
+            setRoot("src/MagicLite")
         }
     }
 
