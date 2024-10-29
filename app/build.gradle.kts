@@ -9,11 +9,11 @@ plugins {
 }
 
 android {
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 21
-        targetSdk = 33
+        targetSdk = 34
         versionName = "5.1.0"
         vectorDrawables.useSupportLibrary = true
     }
@@ -62,14 +62,14 @@ android {
         create("lightningPlus") {
             dimension = "capabilities"
             buildConfigField("boolean", "FULL_VERSION", "Boolean.parseBoolean(\"true\")")
-            applicationId = "acr.browser.lightning"
+            applicationId = "com.lin.magic"
             versionCode = 101
         }
 
         create("lightningLite") {
             dimension = "capabilities"
             buildConfigField("boolean", "FULL_VERSION", "Boolean.parseBoolean(\"false\")")
-            applicationId = "acr.browser.barebones"
+            applicationId = "com.lin.magic.browser"
             versionCode = 102
         }
     }
@@ -87,7 +87,7 @@ android {
     lint {
         abortOnError = true
     }
-    namespace = "acr.browser.lightning"
+    namespace = "com.lin.magic"
 }
 
 jacoco {
@@ -95,6 +95,9 @@ jacoco {
 }
 
 dependencies {
+    implementation(project(":mezzanine"))
+    kapt(project(":mezzanine-compiler"))
+	
     // multidex debug
     debugImplementation("androidx.multidex:multidex:2.0.1")
 
@@ -112,7 +115,7 @@ dependencies {
     implementation("androidx.annotation:annotation:1.5.0")
     implementation("androidx.vectordrawable:vectordrawable-animated:1.1.0")
     implementation("androidx.appcompat:appcompat:1.6.0")
-    implementation("com.google.android.material:material:1.8.0")
+    implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("androidx.core:core-ktx:1.10.0-alpha02")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -124,12 +127,12 @@ dependencies {
     implementation("org.jsoup:jsoup:1.15.3")
 
     // file reading
-    val mezzanineVersion = "1.1.1"
-    implementation("com.anthonycr.mezzanine:mezzanine:$mezzanineVersion")
-    kapt("com.anthonycr.mezzanine:mezzanine-compiler:$mezzanineVersion")
+    //val mezzanineVersion = "1.1.1"
+    //implementation("com.anthonycr.mezzanine:mezzanine:$mezzanineVersion")
+    //kapt("com.anthonycr.mezzanine:mezzanine-compiler:$mezzanineVersion")
 
     // dependency injection
-    val daggerVersion = "2.44.2"
+    val daggerVersion = "2.52"
     implementation("com.google.dagger:dagger:$daggerVersion")
     kapt("com.google.dagger:dagger-compiler:$daggerVersion")
     compileOnly("javax.annotation:jsr250-api:1.0")
@@ -145,11 +148,11 @@ dependencies {
     implementation("io.reactivex.rxjava3:rxkotlin:3.0.1")
 
     // tor proxy
-    val netCipherVersion = "2.0.0-alpha1"
-    implementation("info.guardianproject.netcipher:netcipher:$netCipherVersion")
-    implementation("info.guardianproject.netcipher:netcipher-webkit:$netCipherVersion")
+//    val netCipherVersion = "2.2.0-alpha"
+//    implementation("info.guardianproject.netcipher:netcipher:$netCipherVersion")
+//    implementation("info.guardianproject.netcipher:netcipher-webkit:$netCipherVersion")
 
-    implementation("com.anthonycr.progress:animated-progress:1.0")
+    //implementation("com.anthonycr.progress:animated-progress:1.0")
 
     // memory leak analysis
     debugImplementation("com.squareup.leakcanary:leakcanary-android:2.10")
@@ -159,6 +162,7 @@ dependencies {
 }
 
 kapt {
+    correctErrorTypes = true
     arguments {
         arg("mezzanine.projectPath", project.rootDir)
     }

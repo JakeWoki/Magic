@@ -3,25 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Preference
-        app:fragment="acr.browser.lightning.settings.fragment.AdBlockSettingsFragment"
+        app:fragment="com.lin.magic.settings.fragment.AdBlockSettingsFragment"
         app:title="@string/settings_adblock" />
     <Preference
-        app:fragment="acr.browser.lightning.settings.fragment.GeneralSettingsFragment"
+        app:fragment="com.lin.magic.settings.fragment.GeneralSettingsFragment"
         app:title="@string/settings_general" />
     <Preference
-        app:fragment="acr.browser.lightning.settings.fragment.BookmarkSettingsFragment"
+        app:fragment="com.lin.magic.settings.fragment.BookmarkSettingsFragment"
         app:title="@string/bookmark_settings" />
     <Preference
-        app:fragment="acr.browser.lightning.settings.fragment.DisplaySettingsFragment"
+        app:fragment="com.lin.magic.settings.fragment.DisplaySettingsFragment"
         app:title="@string/settings_display" />
     <Preference
-        app:fragment="acr.browser.lightning.settings.fragment.PrivacySettingsFragment"
+        app:fragment="com.lin.magic.settings.fragment.PrivacySettingsFragment"
         app:title="@string/settings_privacy" />
     <Preference
-        app:fragment="acr.browser.lightning.settings.fragment.AdvancedSettingsFragment"
+        app:fragment="com.lin.magic.settings.fragment.AdvancedSettingsFragment"
         app:title="@string/settings_advanced" />
     <Preference
-        app:fragment="acr.browser.lightning.settings.fragment.AboutSettingsFragment"
+        app:fragment="com.lin.magic.settings.fragment.AboutSettingsFragment"
         app:summary="@string/settings_about_explain"
         app:title="@string/settings_about" />
     <Preference
@@ -36,7 +36,7 @@
         </intent>
     </Preference>
     <Preference
-        app:fragment="acr.browser.lightning.settings.fragment.DebugSettingsFragment"
+        app:fragment="com.lin.magic.settings.fragment.DebugSettingsFragment"
         app:key="DEBUG"
         app:title="@string/debug_title" />
 </PreferenceScreen>

@@ -48,7 +48,7 @@
             android:value="2.1" />
 
         <activity
-            android:name="acr.browser.lightning.DefaultBrowserActivity"
+            android:name="com.lin.magic.DefaultBrowserActivity"
             android:alwaysRetainTaskState="true"
             android:clearTaskOnLaunch="false"
             android:colorMode="wideColorGamut"
@@ -139,14 +139,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="acr.browser.lightning.IncognitoBrowserActivity"
+            android:name="com.lin.magic.IncognitoBrowserActivity"
             android:alwaysRetainTaskState="true"
             android:clearTaskOnLaunch="false"
             android:colorMode="wideColorGamut"
             android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden|keyboard"
             android:exported="true"
             android:launchMode="singleInstance"
-            android:parentActivityName="acr.browser.lightning.DefaultBrowserActivity"
+            android:parentActivityName="com.lin.magic.DefaultBrowserActivity"
             android:process=":incognito"
             android:taskAffinity="com.anthonycr.browser.AffinityIncognito"
             android:theme="@style/Theme.DarkTheme"
@@ -164,7 +164,7 @@
             android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden|keyboard"
             android:exported="false"
             android:label="@string/settings"
-            android:parentActivityName="acr.browser.lightning.DefaultBrowserActivity"
+            android:parentActivityName="com.lin.magic.DefaultBrowserActivity"
             android:theme="@style/Theme.SettingsTheme">
             <intent-filter>
                 <action android:name="android.intent.action.SETTINGS" />
